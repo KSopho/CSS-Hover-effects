@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;    
+}
+
+@font-face {
+    font-family: Dancing;
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+/* 
+.button{
+    width: 150px;
+    margin: 50px auto;
+    padding: 30px 0;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    font-family: Dancing;
+    font-size: 22px;
+    transition: color 2s, background-color 2s, border 2s, transform 1s;
+    
+}
+
+.button:hover{
+    color: #1c1b1b7d;
+    background-color: rgb(97, 234, 244);
+    border: 1px solid #1c1b1b7d;
+    box-shadow: 1px 1px 20px #1c1b1b7d;
+    transform: rotate(360deg);
+    cursor: pointer;
+} */
+
+
+
+
+.imgcontainer{
+    width: 200px;
+    margin: 100px auto;
+    padding: 30px 0;
+    background-color:#69d896;
+    border-radius: 6px;
+}
+
+.img{
+    width: 170px;
+    height: 170px;
+    border: 5px solid #08771a;
+    border-radius: 50%;
+    filter: grayscale();    
+    background-image: url(../img/yupiramos.jpg);
+    background-size: 100%;
+    margin: 0 auto 30px;
+    transition: filter 0.5s ease-in-out;
+    
+}
+
+.warwera{
+    width: 100px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Dancing;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.warwera::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 2s;
+
+}
+ .imgcontainer:hover .warwera::after{
+    width: 100%;    
+}
+
+.imgcontainer:hover .warwera{
+    text-shadow: 0 0 20px #000000;
+}
+
+.imgcontainer:hover, .imgcontainer:hover .img{
+    box-shadow: 0 0 20px #000000;
+}
+
+.imgcontainer:hover{
+    background-color: #44dd81;
+}
+
+.imgcontainer:hover .img{
+    filter: none;
+}
+
+
+    
